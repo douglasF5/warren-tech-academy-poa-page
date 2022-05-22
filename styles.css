@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brand-red: #ED2E5C;
+    --brand-red-lighter: #FFE1E8;
+
+    --gray-paragraph: #777777;
+
+    --nav-height: 7.6rem;
+
+    font-size: 62.5%;   
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+
+/* GERAL ============================================== */
+
+.wrapper {
+    width: 37.5rem;
+    padding-inline: 2.4rem;
+
+    margin-inline: auto;
+}
+
+h3 {
+    font-size: 2rem;
+    color: var(--brand-red);
+    margin-top: 2.4rem;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--brand-red);
+    margin-bottom: 3.6rem;
+}
+
+p {
+    font-size: 1.4rem;
+    color: var(--gray-paragraph);
+    line-height: 150%;
+}
+
+/* NAV ================================================== */
+
+nav {
+    height:  var(--nav-height);
+
+    display: flex;
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav.scroll {
+    background-color: white;
+    border-bottom: 1px solid var(--brand-red);
+    width: 100%;
+}
+
+
+/* HEADER =============================================== */
+
+
+header {
+    margin-top: calc(4.4rem + var(--nav-height));
+    padding-inline: 2.4rem;
+}
+
+header h2 {
+    font-size: 2.4rem;
+    color: var(--brand-red);
+    margin-bottom: 2.1rem;
+}
+
+header p:nth-child(3) {
+    margin-top: 2.2rem;
+    margin-bottom: 2.2rem;
+}
+
+span {
+    color: var(--brand-red);
+}
+
+header .class-img {
+    width: 30.3rem;
+    margin-bottom: 1rem;
+}
+
+header .hashtag {
+    width: 29.5rem;
+}
+
+/* SOBRE -=============================================== */
+
+.about {
+    margin-top: 5rem;
+}
+
+
+/* RODAPÉ -============================================== */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    height: 33rem;
+    width: 100vw;
+    padding-block: 2rem;
+    
+    background-color: var(--brand-red);
+    margin-top: 5rem;
+    justify-content: space-between;
+}
+
+.content {
+    width: 37.5rem;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-icon {
+    margin-bottom: 2rem;
+}
+
+.footer a {
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.white-text {
+    color: white;
+    margin-top: 2rem;
+
+    font-style: italic;
+}
